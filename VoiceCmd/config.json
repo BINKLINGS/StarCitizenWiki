@@ -78,7 +78,7 @@
           "type": "keypress",
           "params": {
             "keys": ["b"],
-            "duration": 0.1
+            "duration": 0.5
           }
         }
       ]
