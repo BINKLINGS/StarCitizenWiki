@@ -1,0 +1,315 @@
+{
+  "settings": {
+    "voice_name": "David",        
+    "recognizer_name": "English", 
+    "speech_rate": 1.5,             
+    "initial_greeting": "Welcome to Roberts Space Industries, enjoy your life, system check."
+  },
+
+  "commands": [
+    {
+      "trigger": "Interact Mode",
+      "description": "Toggle Interaction Mode (Hold F).",
+      "actions": [
+        {
+          "type": "speak",
+          "params": {
+            "text": "Entering interaction mode."
+          }
+        },
+        {
+          "type": "keypress",
+          "params": {
+            "keys": ["f"],
+            "duration": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "trigger": "Request Landing",
+      "description": "Open Comms and request landing permission.",
+      "actions": [
+        {
+          "type": "speak",
+          "params": {
+            "text": "Requesting landing permission."
+          }
+        },
+        {
+          "type": "keypress",
+          "params": {
+            "keys": ["alt", "n"],
+            "duration": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "trigger": "Landing Gear",
+      "description": "Retract Landing Gear.",
+      "actions": [
+        {
+          "type": "speak",
+          "params": {
+            "text": "Landing gear, switching."
+          }
+        },
+        {
+          "type": "keypress",
+          "params": {
+            "keys": ["n"],
+            "duration": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "trigger": "Master Mode",
+      "description": "Switch MM",
+      "actions": [
+        {
+          "type": "speak",
+          "params": {
+            "text": "Switching Master Mode."
+          }
+        },
+        {
+          "type": "keypress",
+          "params": {
+            "keys": ["b"],
+            "duration": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "trigger": "Target Lock",
+      "description": "Lock current target.",
+      "actions": [
+        {
+          "type": "speak",
+          "params": {
+            "text": "Target locked."
+          }
+        },
+        {
+          "type": "keypress",
+          "params": {
+            "keys": ["t"],
+            "duration": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "trigger": "Toggle Gimbal",
+      "description": "Toggle Gimbal Lock.",
+      "actions": [
+        {
+          "type": "speak",
+          "params": {
+            "text": "Toggling gimbal lock."
+          }
+        },
+        {
+          "type": "keypress",
+          "params": {
+            "keys": ["g"],
+            "duration": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "trigger": "Power on",
+      "description": "Power on all systems.",
+      "actions": [
+        {
+          "type": "speak",
+          "params": {
+            "text": "All systems, online."
+          }
+        },
+        {
+          "type": "keypress",
+          "params": {
+            "keys": ["u"],
+            "duration": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "trigger": "Power off",
+      "description": "Power off all systems.",
+      "actions": [
+        {
+          "type": "speak",
+          "params": {
+            "text": "All systems, offline."
+          }
+        },
+        {
+          "type": "keypress",
+          "params": {
+            "keys": ["u"],
+            "duration": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "trigger": "Engines On",
+      "description": "Power on engines.",
+      "actions": [
+        {
+          "type": "speak",
+          "params": {
+            "text": "Engines, online."
+          }
+        },
+        {
+          "type": "keypress",
+          "params": {
+            "keys": ["i"],
+            "duration": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "trigger": "Engines Off",
+      "description": "Power off engines.",
+      "actions": [
+        {
+          "type": "speak",
+          "params": {
+            "text": "Engines, offline."
+          }
+        },
+        {
+          "type": "keypress",
+          "params": {
+            "keys": ["i"],
+            "duration": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "trigger": "Starmap",
+      "description": "Open the Starmap.",
+      "actions": [
+        {
+          "type": "speak",
+          "params": {
+            "text": "Accessing starmap."
+          }
+        },
+        {
+          "type": "keypress",
+          "params": {
+            "keys": ["f2"],
+            "duration": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "trigger": "Mobiglass",
+      "description": "Open Mobiglass.",
+      "actions": [
+        {
+          "type": "speak",
+          "params": {
+            "text": "Accessing Mobiglass."
+          }
+        },
+        {
+          "type": "keypress",
+          "params": {
+            "keys": ["f1"],
+            "duration": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "trigger": "Lights",
+      "description": "Turn headlights on/off.",
+      "actions": [
+        {
+          "type": "speak",
+          "params": {
+            "text": "Toggling lights."
+          }
+        },
+        {
+          "type": "keypress",
+          "params": {
+            "keys": ["l"],
+            "duration": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "trigger": "Shields",
+      "description": "Toggle shields.",
+      "actions": [
+        {
+          "type": "speak",
+          "params": {
+            "text": "Toggling shields."
+          }
+        },
+        {
+          "type": "keypress",
+          "params": {
+            "keys": ["o"],
+            "duration": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "trigger": "Cruise Mode",
+      "description": "Toggle Cruise Control.",
+      "actions": [
+        {
+          "type": "speak",
+          "params": {
+            "text": "Toggling cruise control."
+          }
+        },
+        {
+          "type": "keypress",
+          "params": {
+            "keys": ["alt", "c"],
+            "duration": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "trigger": "Scan Mode",
+      "description": "scan",
+      "actions": [
+        {
+          "type": "speak",
+          "params": {
+            "text": "Toggling scan mode."
+          }
+        },
+        {
+          "type": "keypress",
+          "params": {
+            "keys": ["v"],
+            "duration": 0.1
+          }
+        }
+      ]
+    }
+  ]
+}
